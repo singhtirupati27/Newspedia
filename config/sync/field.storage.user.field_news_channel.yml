@@ -1,0 +1,36 @@
+uuid: 2dc017c6-2d91-4c63-ab4a-93bb81c62ce4
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - user
+id: user.field_news_channel
+field_name: field_news_channel
+entity_type: user
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: 'India Tv'
+    -
+      value: '2'
+      label: 'Zee News'
+    -
+      value: '3'
+      label: 'Aaj Tak'
+    -
+      value: '4'
+      label: '24 Ghanta'
+    -
+      value: '5'
+      label: 'Amar Bangla'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

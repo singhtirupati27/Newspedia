@@ -1,0 +1,21 @@
+uuid: e8fb5894-02fe-412f-9570-4bbcf868b1c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_reporter_phone
+    - node.type.news_reporter
+  module:
+    - telephone
+id: node.news_reporter.field_reporter_phone
+field_name: field_reporter_phone
+entity_type: node
+bundle: news_reporter
+label: 'Reporter Phone'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

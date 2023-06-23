@@ -1,0 +1,15 @@
+uuid: 1649b40e-d440-4d1b-bf61-8752dbd4311d
+langcode: en
+status: true
+dependencies: {  }
+name: sidebar_image
+label: 'Sidebar Image (50x50)'
+effects:
+  bd334e3f-707e-45c1-9523-3d256aa9342e:
+    uuid: bd334e3f-707e-45c1-9523-3d256aa9342e
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 50
+      height: 50
+      anchor: center-center

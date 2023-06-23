@@ -1,0 +1,49 @@
+uuid: 7d020fb8-0000-4f68-a62b-5a2490adba0d
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.current_news
+  module:
+    - system
+    - taxonomy
+    - user
+    - views
+  theme:
+    - bootstrap5
+id: views_block__current_news_block_2
+theme: bootstrap5
+region: content
+weight: -3
+provider: null
+plugin: 'views_block:current_news-block_2'
+settings:
+  id: 'views_block:current_news-block_2'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/taxonomy/term/*'
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      authenticated: authenticated
+      content_editor: content_editor
+      administrator: administrator
+      reporter: reporter
+      content_publisher: content_publisher
+  'entity_bundle:taxonomy_term':
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    context_mapping:
+      taxonomy_term: '@taxonomy_term.taxonomy_term_route_context:taxonomy_term'
+    bundles:
+      news_topics: news_topics

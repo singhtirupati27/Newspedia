@@ -1,0 +1,21 @@
+uuid: 3db13c5e-2371-42ba-8c4c-3f255267e7c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lifework
+    - node.type.famous_person
+  module:
+    - text
+id: node.famous_person.field_lifework
+field_name: field_lifework
+entity_type: node
+bundle: famous_person
+label: Lifework
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

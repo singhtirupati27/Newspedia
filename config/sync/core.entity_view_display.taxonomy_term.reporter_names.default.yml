@@ -1,0 +1,31 @@
+uuid: 0b2f3260-16b3-442b-a08f-3fec7934d32b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.reporter_names.field_reporter_profile
+    - taxonomy.vocabulary.reporter_names
+  module:
+    - text
+id: taxonomy_term.reporter_names.default
+targetEntityType: taxonomy_term
+bundle: reporter_names
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_reporter_profile:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true

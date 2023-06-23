@@ -1,0 +1,29 @@
+uuid: b2da2384-0157-4a52-9f3c-f51a701ddcd8
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.header-menu
+  module:
+    - system
+  theme:
+    - bootstrap5
+id: headermenu
+theme: bootstrap5
+region: sidebar_first
+weight: -9
+provider: null
+plugin: 'system_menu_block:header-menu'
+settings:
+  id: 'system_menu_block:header-menu'
+  label: 'Header Menu'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: true
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '/admin/*'

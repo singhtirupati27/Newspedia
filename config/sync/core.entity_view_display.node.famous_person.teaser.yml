@@ -1,0 +1,41 @@
+uuid: b2cc0cd6-572f-4329-a95b-d870999d1d8e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.famous_person.field_born
+    - field.field.node.famous_person.field_death
+    - field.field.node.famous_person.field_died
+    - field.field.node.famous_person.field_early_life
+    - field.field.node.famous_person.field_file_download
+    - field.field.node.famous_person.field_known_for
+    - field.field.node.famous_person.field_lifework
+    - field.field.node.famous_person.field_picture
+    - field.field.node.famous_person.field_related_links
+    - field.field.node.famous_person.field_trivia
+    - node.type.famous_person
+  module:
+    - user
+id: node.famous_person.teaser
+targetEntityType: node
+bundle: famous_person
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_born: true
+  field_death: true
+  field_died: true
+  field_early_life: true
+  field_file_download: true
+  field_known_for: true
+  field_lifework: true
+  field_picture: true
+  field_related_links: true
+  field_trivia: true
+  langcode: true

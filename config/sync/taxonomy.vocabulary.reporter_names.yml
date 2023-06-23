@@ -1,0 +1,8 @@
+uuid: b3f5331c-e86c-4b4d-a935-456d6a78d0b8
+langcode: en
+status: true
+dependencies: {  }
+name: 'Reporter Names'
+vid: reporter_names
+description: 'This is where we track news reporter name.'
+weight: 0

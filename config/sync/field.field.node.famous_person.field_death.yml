@@ -1,0 +1,21 @@
+uuid: ff1897fb-07e4-40cb-a797-9c65e58b8ff7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_death
+    - node.type.famous_person
+  module:
+    - text
+id: node.famous_person.field_death
+field_name: field_death
+entity_type: node
+bundle: famous_person
+label: Death
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

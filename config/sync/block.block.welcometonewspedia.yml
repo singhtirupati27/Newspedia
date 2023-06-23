@@ -1,0 +1,40 @@
+uuid: e0bdf108-bcbd-433c-bb74-f7f5da95419b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:ec294607-2f24-4b83-aa55-6718c5027195'
+  module:
+    - block_content
+    - system
+    - user
+  theme:
+    - bootstrap5
+id: welcometonewspedia
+theme: bootstrap5
+region: sidebar_first
+weight: -11
+provider: null
+plugin: 'block_content:ec294607-2f24-4b83-aa55-6718c5027195'
+settings:
+  id: 'block_content:ec294607-2f24-4b83-aa55-6718c5027195'
+  label: 'Welcome To NEWSPEDIA'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '/admin/*'
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      authenticated: authenticated
+      content_editor: content_editor
+      administrator: administrator

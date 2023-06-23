@@ -1,0 +1,53 @@
+uuid: e209f12a-b726-47ce-b2b2-6ee8e30b4a57
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.news_reporter.field_reporter_email
+    - field.field.node.news_reporter.field_reporter_image
+    - field.field.node.news_reporter.field_reporter_phone
+    - image.style.medium
+    - node.type.news_reporter
+  module:
+    - image
+    - telephone
+    - user
+id: node.news_reporter.full
+targetEntityType: node
+bundle: news_reporter
+mode: full
+content:
+  field_reporter_email:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_reporter_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: medium
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_reporter_phone:
+    type: telephone_link
+    label: above
+    settings:
+      title: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,25 @@
+uuid: 620bc74c-8f94-4b7b-b4e0-cd6c5dba0139
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.page
+  module:
+    - devel_generate
+    - node
+    - path
+    - pathauto
+    - toolbar
+id: content_publisher
+label: 'Content Publisher'
+weight: 5
+is_admin: null
+permissions:
+  - 'access toolbar'
+  - 'administer devel_generate'
+  - 'administer pathauto'
+  - 'administer url aliases'
+  - 'create page content'
+  - 'delete own page content'
+  - 'edit own page content'
+  - 'view own unpublished content'

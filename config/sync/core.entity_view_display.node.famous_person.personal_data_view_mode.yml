@@ -1,0 +1,142 @@
+uuid: 72940ed9-28bf-4d07-97cf-5befbe5ccff5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.personal_data_view_mode
+    - field.field.node.famous_person.field_born
+    - field.field.node.famous_person.field_death
+    - field.field.node.famous_person.field_died
+    - field.field.node.famous_person.field_early_life
+    - field.field.node.famous_person.field_file_download
+    - field.field.node.famous_person.field_known_for
+    - field.field.node.famous_person.field_lifework
+    - field.field.node.famous_person.field_picture
+    - field.field.node.famous_person.field_related_links
+    - field.field.node.famous_person.field_trivia
+    - node.type.famous_person
+  module:
+    - datetime
+    - field_group
+    - file
+    - image
+    - layout_builder
+    - link
+    - text
+    - user
+third_party_settings:
+  field_group:
+    group_personal_data:
+      children:
+        - field_born
+        - field_died
+        - field_known_for
+      label: 'Personal Data'
+      parent_name: ''
+      region: content
+      weight: 2
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        description: ''
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.famous_person.personal_data_view_mode
+targetEntityType: node
+bundle: famous_person
+mode: personal_data_view_mode
+content:
+  field_born:
+    type: datetime_default
+    label: inline
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_death:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_died:
+    type: datetime_default
+    label: inline
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_early_life:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_file_download:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_known_for:
+    type: text_default
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_lifework:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_picture:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_related_links:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 11
+    region: content
+  field_trivia:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
