@@ -1,0 +1,55 @@
+uuid: af293897-9ac2-4790-8a38-beaa27245cac
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+    - node.type.article
+    - node.type.forum
+    - node.type.news
+    - node.type.page
+  module:
+    - comment
+    - contact
+    - contextual
+    - field_ui
+    - filter
+    - media
+    - node
+    - search
+    - shortcut
+    - system
+    - taxonomy
+_core:
+  default_config_hash: I44QAB4es39lNzMQWiJLq2dfjX7VRSOzT_5KzAcUq_M
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access shortcuts'
+  - 'access site-wide contact form'
+  - 'access taxonomy overview'
+  - 'access user contact forms'
+  - 'access user profiles'
+  - 'administer contact_message fields'
+  - 'administer node fields'
+  - 'administer taxonomy_term display'
+  - 'administer user display'
+  - 'edit own article content'
+  - 'edit own comments'
+  - 'edit own forum content'
+  - 'edit own news content'
+  - 'edit own page content'
+  - 'link to any page'
+  - 'post comments'
+  - 'search content'
+  - 'skip comment approval'
+  - 'use text format basic_html'
+  - 'view media'
+  - 'view own unpublished content'
+  - 'view user email addresses'

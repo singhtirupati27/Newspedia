@@ -1,0 +1,71 @@
+uuid: 93d04f08-1e9c-49ae-b342-98e5f85153fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.news.field_news_date
+    - field.field.node.news.field_news_description
+    - field.field.node.news.field_news_image
+    - field.field.node.news.field_news_reporter_profile
+    - field.field.node.news.field_news_topics
+    - field.field.node.news.field_reporter
+    - field.field.node.news.field_reporter_name
+    - image.style.medium
+    - node.type.news
+  module:
+    - datetime
+    - image
+    - text
+    - user
+id: node.news.teaser
+targetEntityType: node
+bundle: news
+mode: teaser
+content:
+  field_news_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_news_description:
+    type: text_trimmed
+    label: above
+    settings:
+      trim_length: 300
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_news_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: medium
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_news_topics:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+hidden:
+  field_news_reporter_profile: true
+  field_reporter: true
+  field_reporter_name: true
+  langcode: true

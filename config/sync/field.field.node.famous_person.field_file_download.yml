@@ -1,0 +1,27 @@
+uuid: f5d2541c-9567-43c5-a7d7-eb4532d6d56a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_file_download
+    - node.type.famous_person
+  module:
+    - file
+id: node.famous_person.field_file_download
+field_name: field_file_download
+entity_type: node
+bundle: famous_person
+label: 'File download'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt pdf doc xls xlsx docx jpg png'
+  max_filesize: ''
+  description_field: false
+field_type: file

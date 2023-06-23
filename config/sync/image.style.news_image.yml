@@ -1,0 +1,15 @@
+uuid: 902e4b93-2539-4c59-b04e-6eb045a1269c
+langcode: en
+status: true
+dependencies: {  }
+name: news_image
+label: 'News Image (640x480)'
+effects:
+  ab197b9f-d531-4ec4-b66c-df6a478ca53e:
+    uuid: ab197b9f-d531-4ec4-b66c-df6a478ca53e
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 640
+      height: 480
+      anchor: center-center

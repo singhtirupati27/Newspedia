@@ -1,0 +1,57 @@
+uuid: bf588221-ad44-4fce-98a9-3a097ceb255a
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.audio
+    - media.type.document
+    - media.type.image
+    - media.type.remote_video
+    - media.type.video
+    - node.type.news
+    - node.type.news_reporter
+    - taxonomy.vocabulary.news_topics
+  module:
+    - devel_generate
+    - field_ui
+    - media
+    - node
+    - pathauto
+    - taxonomy
+    - toolbar
+id: reporter
+label: Reporter
+weight: 4
+is_admin: null
+permissions:
+  - 'access toolbar'
+  - 'administer devel_generate'
+  - 'administer node display'
+  - 'administer pathauto'
+  - 'create news content'
+  - 'create news_reporter content'
+  - 'create terms in news_topics'
+  - 'delete any news content'
+  - 'delete news revisions'
+  - 'delete news_reporter revisions'
+  - 'delete own audio media'
+  - 'delete own document media'
+  - 'delete own image media'
+  - 'delete own news content'
+  - 'delete own news_reporter content'
+  - 'delete own remote_video media'
+  - 'delete own video media'
+  - 'delete terms in news_topics'
+  - 'edit any news content'
+  - 'edit any news_reporter content'
+  - 'edit own audio media'
+  - 'edit own document media'
+  - 'edit own image media'
+  - 'edit own news_reporter content'
+  - 'edit own remote_video media'
+  - 'edit own video media'
+  - 'edit terms in news_topics'
+  - 'revert news revisions'
+  - 'revert news_reporter revisions'
+  - 'view news revisions'
+  - 'view news_reporter revisions'

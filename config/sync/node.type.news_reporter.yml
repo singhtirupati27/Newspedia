@@ -1,0 +1,17 @@
+uuid: a39b7963-02af-4630-b294-0b73b88f4c58
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'News Reporter'
+type: news_reporter
+description: 'News reporter information.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

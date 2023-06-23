@@ -1,0 +1,19 @@
+uuid: c1f965ad-e344-43bc-b8b8-2ce0de71372b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_lifework
+field_name: field_lifework
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

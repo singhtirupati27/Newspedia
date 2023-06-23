@@ -1,0 +1,10 @@
+uuid: 91a5bd3a-c238-44d9-a29a-3566ee7151a9
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.tivia_view_mode
+label: 'Tivia View Mode'
+targetEntityType: node
+cache: true

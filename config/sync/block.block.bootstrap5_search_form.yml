@@ -1,0 +1,28 @@
+uuid: 43ec949c-a287-40e4-9f30-e27f136872c6
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+    - system
+  theme:
+    - bootstrap5
+_core:
+  default_config_hash: HZJ8894mYbX0pdeltUdfnQjONb-BnkflWDqEm_x13m4
+id: bootstrap5_search_form
+theme: bootstrap5
+region: sidebar_second
+weight: -8
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '/admin/*'

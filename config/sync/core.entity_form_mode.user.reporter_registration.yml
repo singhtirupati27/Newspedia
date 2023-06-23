@@ -1,0 +1,10 @@
+uuid: 14269549-9d61-4d2a-9f03-cc9884e46277
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.reporter_registration
+label: 'Reporter Registration'
+targetEntityType: user
+cache: true

@@ -1,0 +1,29 @@
+uuid: f3ba0ca0-6ebe-41b1-a845-9ad1c3c3a0ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_reporter
+    - node.type.news
+    - node.type.news_reporter
+id: node.news.field_reporter
+field_name: field_reporter
+entity_type: node
+bundle: news
+label: Reporter
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      news_reporter: news_reporter
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

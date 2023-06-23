@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: en
+uuid: e2e0a750-b05c-410f-bad7-fb2275873b57
+name: NEWSPEDIA
+mail: tirupati.singh@innoraft.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node/3
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en
+mail_notification: ''

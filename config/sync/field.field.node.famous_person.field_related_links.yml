@@ -1,0 +1,23 @@
+uuid: 76aee095-c976-4def-bd7c-2068f39fbc48
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_related_links
+    - node.type.famous_person
+  module:
+    - link
+id: node.famous_person.field_related_links
+field_name: field_related_links
+entity_type: node
+bundle: famous_person
+label: 'Related links'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 16
+field_type: link

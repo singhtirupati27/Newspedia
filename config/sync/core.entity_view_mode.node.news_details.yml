@@ -1,0 +1,10 @@
+uuid: f24e4673-928c-48d7-85cd-d949c3f38e05
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.news_details
+label: 'News Details'
+targetEntityType: node
+cache: true

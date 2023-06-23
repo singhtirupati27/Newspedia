@@ -1,0 +1,27 @@
+uuid: 63d67334-70f3-4294-87e5-9de39233e85b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.news_reporter.field_reporter_email
+    - field.field.node.news_reporter.field_reporter_image
+    - field.field.node.news_reporter.field_reporter_phone
+    - node.type.news_reporter
+  module:
+    - user
+id: node.news_reporter.teaser
+targetEntityType: node
+bundle: news_reporter
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_reporter_email: true
+  field_reporter_image: true
+  field_reporter_phone: true
+  langcode: true

@@ -1,0 +1,21 @@
+uuid: 8e4cdf3a-6ee6-41e5-bad3-0f5eea1719a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_known_for
+    - node.type.famous_person
+  module:
+    - text
+id: node.famous_person.field_known_for
+field_name: field_known_for
+entity_type: node
+bundle: famous_person
+label: 'Known for'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

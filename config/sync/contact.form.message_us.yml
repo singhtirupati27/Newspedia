@@ -1,0 +1,12 @@
+uuid: 34179058-5692-4489-ab8c-cba2fff775f1
+langcode: en
+status: true
+dependencies: {  }
+id: message_us
+label: 'Message Us'
+recipients:
+  - tirupatisingh1027@gmail.com
+reply: ''
+weight: 0
+message: ''
+redirect: ''

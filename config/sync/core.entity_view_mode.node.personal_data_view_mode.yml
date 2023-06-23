@@ -1,0 +1,10 @@
+uuid: 658419a9-101f-46a0-88d3-c77933ff951a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.personal_data_view_mode
+label: 'Personal Data View Mode'
+targetEntityType: node
+cache: true

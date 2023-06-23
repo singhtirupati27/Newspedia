@@ -1,0 +1,22 @@
+uuid: 0ea8e082-0a77-4fe7-b0c1-6297b51c20f2
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: reporter_url
+label: 'Reporter URL'
+type: 'canonical_entities:node'
+pattern: '/reporter/[node:title]'
+selection_criteria:
+  e649bee9-3173-40ff-9a93-857e31b0b4d6:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: e649bee9-3173-40ff-9a93-857e31b0b4d6
+    context_mapping:
+      node: node
+    bundles:
+      news_reporter: news_reporter
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,163 @@
+uuid: 0e1472c0-6427-494d-a61c-b3745419acc2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.famous_person.field_born
+    - field.field.node.famous_person.field_death
+    - field.field.node.famous_person.field_died
+    - field.field.node.famous_person.field_early_life
+    - field.field.node.famous_person.field_file_download
+    - field.field.node.famous_person.field_known_for
+    - field.field.node.famous_person.field_lifework
+    - field.field.node.famous_person.field_picture
+    - field.field.node.famous_person.field_related_links
+    - field.field.node.famous_person.field_trivia
+    - image.style.thumbnail
+    - node.type.famous_person
+  module:
+    - datetime
+    - file
+    - image
+    - link
+    - path
+    - text
+id: node.famous_person.default
+targetEntityType: node
+bundle: famous_person
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_born:
+    type: datetime_default
+    weight: 122
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_death:
+    type: text_textarea
+    weight: 127
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_died:
+    type: datetime_default
+    weight: 123
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_early_life:
+    type: text_textarea
+    weight: 125
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_file_download:
+    type: file_generic
+    weight: 129
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  field_known_for:
+    type: text_textarea
+    weight: 124
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_lifework:
+    type: text_textarea
+    weight: 126
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_picture:
+    type: image_image
+    weight: 121
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_related_links:
+    type: link_default
+    weight: 130
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_trivia:
+    type: text_textarea
+    weight: 128
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 15
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 120
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 16
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

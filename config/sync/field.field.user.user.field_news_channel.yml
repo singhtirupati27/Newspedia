@@ -1,0 +1,21 @@
+uuid: a8b8fee3-7f01-404f-99b3-43c3a5fc7fde
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_news_channel
+  module:
+    - options
+    - user
+id: user.user.field_news_channel
+field_name: field_news_channel
+entity_type: user
+bundle: user
+label: 'News Channel'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

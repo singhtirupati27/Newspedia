@@ -1,0 +1,21 @@
+uuid: a108f5ae-1362-4844-9c72-4dc51bbd3f8e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_trivia
+    - node.type.famous_person
+  module:
+    - text
+id: node.famous_person.field_trivia
+field_name: field_trivia
+entity_type: node
+bundle: famous_person
+label: Trivia
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,10 @@
+uuid: bff3d1d2-69dc-46f2-ac7b-c3378689ebfa
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.lifework_view_mode
+label: 'Lifework View Mode'
+targetEntityType: node
+cache: true

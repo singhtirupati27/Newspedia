@@ -1,0 +1,29 @@
+uuid: a5fefe12-4baa-4c7f-af9c-5b1c3be44519
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_news_reporter_profile
+    - node.type.news
+    - taxonomy.vocabulary.reporter_names
+id: node.news.field_news_reporter_profile
+field_name: field_news_reporter_profile
+entity_type: node
+bundle: news
+label: 'News Reporter Profile'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      reporter_names: reporter_names
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
